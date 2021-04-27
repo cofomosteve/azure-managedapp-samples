@@ -1,55 +1,15 @@
 {
+    "$schema": "https://schema.management.azure.com/schemas/0.1.2-preview/CreateUIDefinition.MultiVm.json#",
     "handler": "Microsoft.Azure.CreateUIDef",
     "version": "0.1.2-preview",
     "parameters": {
-        "basics": [
-            {}
-        ],
-        "steps": [
-            {
-                "name": "vmCredentials",
-                "label": "Azure Managed Application",
-                "bladeTitle": "Application credentials",
-                "subLabel": {
-                    "preValidation": "Provide VM credentials",
-                    "postValidation": "Great - let's move on!"
-                },
-                "elements": [
-                    {
-                        "name": "adminUserName",
-                        "type": "Microsoft.Compute.UserNameTextBox",
-                        "label": "Admin username",
-                        "osPlatform": "Windows",
-                        "constraints": {
-                            "required": true
-                        },
-                        "toolTip": "Provide admin username for the virtual machine"
-                    },
-                    {
-                        "name": "vmPwd",
-                        "type": "Microsoft.Compute.CredentialsCombo",
-                        "label": {
-                            "password": "Password",
-                            "confirmPassword": "Confirm password"
-                        },
-                        "osPlatform": "Windows",
-                        "options": {
-                            "hideConfirmation": false
-                        },
-                        "constraints": {
-                            "required": true
-                        },
-                        "toolTip": {
-                            "password": "Provide admin password for the virtual machine"
-                        },
-                        "visible": true
-                    }
-                ]
-            }
-            
-        ],
-        "outputs": {
-            
-        }
+        "config": {
+            "isWizard": false,
+            "basics": { }
+        },
+        "basics": [ ],
+        "steps": [ ],
+        "outputs": { },
+        "resourceTypes": [ ]
     }
 }
