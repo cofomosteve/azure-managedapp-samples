@@ -15,7 +15,6 @@
                 "description": "Specify the Azure region to place the application definition"
             }
         },
-         
         "lockLevel": {
             "type": "string",
             "allowedValues": [
