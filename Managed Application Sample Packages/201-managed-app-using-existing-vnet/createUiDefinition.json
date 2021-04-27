@@ -15,13 +15,7 @@
                 "description": "Specify the Azure region to place the application definition"
             }
         },
-         {
-                        "name": "tagcostbyresource",
-                        "type": "Microsoft.Common.TagsByResource",                        
-                        "resources": [
-                            "Microsoft.*"
-                        ]
-                    },
+         
         "lockLevel": {
             "type": "string",
             "allowedValues": [
